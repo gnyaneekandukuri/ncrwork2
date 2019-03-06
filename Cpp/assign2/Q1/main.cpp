@@ -2,9 +2,10 @@
 using namespace std;
 class polar
 {
-    static int n;
+     
     int x,y;
     public:
+   static int n;
     polar()
     {
         n++;
@@ -17,13 +18,18 @@ class polar
         y=b;
 
     }
-
+    int print()
+{
+    return n;
+}
 
 };
 int polar::n;
 int main(){
     polar p1,p2(5,6);
-    cout<<"Number of objects"<<polar.n<<endl;
+    cout<<"Number of objects"<<polar::n<<endl;
+    polar p3;
+    cout<<p1.print();
     return 1;
 
 }

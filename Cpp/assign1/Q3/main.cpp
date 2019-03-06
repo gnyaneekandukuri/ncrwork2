@@ -34,7 +34,7 @@ complex addComplex(complex &c1, complex &c2) {
  return c1;
 }
 complex mulComplex(complex &c1, complex &c2) {
- c1.real = (c1.real*c2.real) - (c1.img *c2.img);
+ c1.real = (c1.real*c2.real) - (c1.img * c2.img);
  c1.img = (c1.real*c2.img) + (c1.img * c2.real);
  return c1;
 }
